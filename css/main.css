@@ -287,13 +287,20 @@ main section:last-child p:first-child {
 }
 
 @media screen and (max-width: 1000px) {
-	.content nav, .content aside {
+	html {
+		font-size: 100%;
+	}
+
+	.content {
+		display: block;
+	}
+	.content nav,
+	.content aside {
 		display: none;
 	}
 	.content main {
-		width: 100%;
-		flex-basis: 100%;
-		padding: 0 2rem 3.5rem;
+		width: auto;
+		padding: 0 1rem 3.5rem;
 	}
 	header {
 		height: 10rem;
@@ -315,13 +322,28 @@ main section:last-child p:first-child {
 		padding-top: 10rem;
 	}
 
+	footer {
+		font-size: 1rem;
+	}
+	footer span {
+		display: none;
+	}
+
+	h3 {
+		font-size: 1.1rem;
+	}
+	h3 img,
+	h3 span.icon {
+		font-size: 1.5rem;
+		height: 1.5rem;
+		margin-right: 0.5rem;
+	}
+
 	.feature .links {
 		flex-direction: column;
 	}
 	.feature .links a {
 		width: auto;
-		margin: .2rem 0 0;
+		margin: 0.2rem 0 0;
 	}
 }
-
-
