@@ -323,7 +323,7 @@ main section:last-child p:first-child {
 	}
 
 	footer {
-		font-size: 1rem;
+		font-size: .75rem;
 	}
 	footer span {
 		display: none;
@@ -337,6 +337,10 @@ main section:last-child p:first-child {
 		font-size: 1.5rem;
 		height: 1.5rem;
 		margin-right: 0.5rem;
+	}
+
+	.button {
+		font-size: .75rem;
 	}
 
 	.feature .links {
